@@ -3,117 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <title>Desarrollo de Aplicaciones Web</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
     
-    h1{
-        color: white;
-
-        padding: 4%;
-        padding-top: 1.5%;
-        font-weight: normal;
-        margin-bottom: 0px;
-    }
     body{
         background-image: url("imagenes/fondo.gif");
-        background-size: auto 100%;
         background-repeat: repeat-x;
+        background-size: auto 100%;
+        height: 100vh;
     }
 
     #contenedor {
         width: 700px;
         margin: 0 auto;
-        border-radius: 15px;
+        background-color: white;
+        border-radius: 0.8rem;
+        height: 25rem;
         
     }
 
-    #menu   {
-        margin: 0px;
-        padding-left: 0%;
-        background-color: #050F3F;
-        margin-left: 0.8%;
-        height: 2rem;
-        margin-bottom: 0PX;
-        padding-bottom: 0px;
-
-    }
-
-    
-   
-    #menu a {
-        text-decoration: none;
-
-       }
-
-    #menu ul {
-        list-style-type: none;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    #menu ul li {
-        display: inline;
-        background-color: #2D   449A;
-        margin-bottom: 0px;
-        margin-top: 50%;
-
-   
-    }
-    #principal {
-        width: 545px;
-        float:left;
-        margin-top: 15px;
-        padding-top: 0px;
-        background-image: url("imagenes/fondo_articulo.jpg");
-        background-repeat: no-repeat;
-        margin-left: 0.8%;
-        margin-right: 0.8%;
-        
-
-    }
-    #secundario {
-        width: 140px;
-        float:left;    
-        
-    }
-    #pie {
-        clear: both;
-        text-align: center;
-    }
-    
     #cabecera{
         background-image: url("imagenes/cabecera.jpg");
+        background-color: #06256C;
+        background-repeat: no-repeat;
+        border-top-right-radius: 0.8rem;
+        height: 6rem;
+        background-position: -1rem;
+        border-top-left-radius: 0.8rem;
+    }
+    
+    h1{
+        padding: 4%;
+        color: white;
+        font-weight: normal;
         margin-bottom: 0px;
-        height: font-size;
-        height: 5rem;
-        }
-    .articulo{
-        
-        
-        margin-left: 3%;
-    
-    }
-    
-
-    #contenido{
-        background-color: white;
-        padding-left: 0.;
-        height: 450px;
-        border-radius: 15px;
-        margin-left: 0.8%;
-        margin-top: 0px;
-    }
-
-    .articulo h2{
-        padding left: 5%;
-        background-color: #D2DFE8;
-        margin-bottom: 3rem;
-        padding-top: 20px;
     }
 
     #menu{
-        padding-bottom: 0px;
-        margin-bottom: 0px; 
+        background-color: #191C66;  
+        height: 2.4rem;  
     }
+
+    #menu a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #B5BAD2;
+        font-size: 80%;
+        font-family: comic sans;
+    }
+
+    #menu ul {
+        list-style-type: none;
+        margin: 0px;
+        position: relative;
+        bottom: 0px;
+        top: 31%;
+        left: 2%;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    #menu ul li {
+        display: inline;
+        padding: 1.75%;
+        padding-top: 0.5%;
+        background-color: #253575;
+        padding-bottom: 0.58rem;
+                       
+    }
+
+    #menu ul li:first-child{
+        background-color: white; 
+        color: #FFA602;
+    }
+
+    #menu ul .seleccionado :first-child{
+         
+        color: #FFA602;
+    }
+
+    #principal {
+        width: 505px;
+        float:left;
+        height: 14rem;
+        background-color: white;
+    }
+
+    .articulo{
+        background-image: url("imagenes/fondo_articulo.jpg");
+        background-repeat: no-repeat;
+        padding-top: 0.5%;
+        width: 95.6%;
+        margin: 2%;
+        margin-left: 1.35rem;
+        font-size: 1rem;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .articulo h2 {
+        margin-top: 3%;
+        color: #44257D;
+        background-color: #DEE5FD;
+        margin-left: 0px;
+        padding-left: 2%;
+
+    }
+    .articulo ul{
+        margin-bottom: 0px;
+    }
+
+    #secundario {
+        width: 180px;
+        float:left;    
+        border-bottom-right-radius: 0.8rem;
+        background-image: url("imagenes/fondo_columna.gif");
+        background-repeat: no-repeat;
+        margin-top: 0.5rem;
+        height: 13rem;
+    }
+    
+    h3{
+        padding-left: 1rem;
+        padding-top: 3%;
+        background-color: #A0B9F2;
+        margin-bottom: 0px;
+    }
+    #secundario #categorias{
+        list-style-image: url("imagenes/icono_elemento.gif");
+        background-color: #CFDCFA;
+        margin-top: 0px;
+        height: 9.4rem;
+        margin-bottom: 0px;
+        padding-top: 1rem;
+        padding-left: 0px;
+
+    }
+    
+    #secundario #categorias li a{
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    
+    #secundario:nth-child(2){
+        border-top-right-radius: 0.8rem;
+
+    }
+
+    #categorias .seleccionado:first-child{
+        list-style-image: url("imagenes/icono_elemento_seleccionado.gif");
+        background-color: #E1E9FA;
+        margin-left: 0px;
+        list-style-position: inside;
+
+    }
+
+    #categorias .seleccionado a:first-child{
+        font-weight: bold;
+    
+    }
+    
+    #categorias li{
+        margin-left: 0px;
+        width: 10rem;
+        padding-left: 0.4rem;
+        list-style-position: inside;
+        width: 10.85rem;
+        border: 1px solid;
+        border-color: #E1E9FA;
+    }
+
+    #pie {
+        clear: both;
+        text-align: left;
+        background-image: url("imagenes/fondo_pie.jpg");
+        background-size: 700px;
+        background-repeat: no-repeat;
+        height: 4.4rem;
+        border-bottom-right-radius: 0.8rem;
+        padding-top: 0.2rem;
+        padding-left: 2rem;
+        font-size: 0.75rem;
+        color: blue;
+
+    }
+    
+
 
     </style>
 </head>
